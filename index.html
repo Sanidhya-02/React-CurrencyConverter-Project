@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="name-styled">SANIDHYA :)</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about"><i class="fas fa-home home-icon"></i> About</a></li>
+                <li><a href="#projects">Project Details</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="about-section">
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Profile Image" class="profile-img">
+            <div class="profile-text">
+                <h1>Sanidhya</h1>
+                <p>Fresh front-end developer who is trying to create responsive and user-friendly websites. Passionate about clean code and intuitive design. When I'm not coding, you can find me training in gym or watching science fiction movies.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <i class="fab fa-html5 skill-icon"></i>
+                <p>HTML</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-css3-alt skill-icon"></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-js skill-icon"></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-react skill-icon"></i>
+                <p>React</p>
+            </div>
+            <div class="skill">
+                <i class="fab fa-node skill-icon"></i>
+                <p>Node.js</p>
+            </div>
+            <div class="skill">
+            <i class="fab fa-java skill-icon"></i>
+            <p>Java</p>
+            </div>
+            <div class="skill">
+                <img src="kotlin_2.png" alt="Kotlin" class="skill-icon custom-icon">
+                <p>Kotlin</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3>E-commerce Website</h3>
+                <p>Developed a full-featured e-commerce platform with product filtering, cart functionality, and secure checkout.</p>
+            </div>
+            <div class="project">
+                <h3>Weather Dashboard</h3>
+                <p>Created a weather application that displays current conditions and 5-day forecast using a third-party API.</p>
+            </div>
+            <div class="project">
+                <h3>Arcade Management App</h3>
+                <p>Built a collaborative task management tool with drag-and-drop functionality and real-time updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="recommendations" class="recommendations-section">
+        <h2>Recommendations</h2>
+        <div class="recommendations-container">
+            <div class="recommendation">
+                <p>"Sanidhya is an hard-working developer who consistently tries his best to develop best projects and high-quality work ahead of schedule."</p>
+                <p>- Manjula Shenoy, OOP Language Senior Coordinator</p>
+            </div>
+            <div class="recommendation">
+                <p>"His attention to detail and problem-solving skills make her a valuable team member."</p>
+                <p>- Devansh, Senior Developer, MIT</p>
+            </div>
+            <div class="recommendation">
+                <p>"Sanidhya's ability to understand complex technical concepts to the best of his capability is remarkable."</p>
+                <p>- Manoj Tolani, Embedded Systems and IoT Developer</p>
+            </div>
+        </div>
+        
+        <div class="form-container">
+            <h3>Leave a Recommendation</h3>
+            <form id="recommendation-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="message" placeholder="Your Recommendation" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <p>Thank you for leaving a recommendation!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
